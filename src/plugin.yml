@@ -1,0 +1,37 @@
+name: SleepNotify
+main: com.itechremix.plugins.bukkit.sleepnotify.SleepNotify
+version: 2.5
+author: iTechRemix
+description: Know what players are sleeping and who is awake.
+commands:
+    sleeping:
+        usage: /sleeping
+        description: Shows a list of sleeping players.
+    awake:
+        usage: /awake
+        description: Shows a list of awake players.
+    sn:
+        usage: /sn [option] [action/value]
+        description: Allows for interaction with different aspects of SleepNotify.
+    sleepnotify:
+        usage: /sleepnotify [option] [action/value]
+        description: Alternative to /sn. 
+permissions:
+    sleepnotify.wake:
+        description: An alert will be shown when a player with this permission wakes.
+        default: true
+    sleepnotify.sleep:
+        description: An alert will be shown when a player with this permission sleeps.
+        default: true
+    sleepnotify.list:
+        description: Gives a player access to the "/sleeping" and "/awake" commands.
+        default: true
+    sleepnotify.hide:
+        description: Alerts will not be shown for players with this permission.
+        default: false
+    sleepnotify.nokick:
+        description: If a player has this permission, they will not be kicked under any circumstances.
+        default: false
+    sleepnotify.admin:
+        description: Gives a player access to SleepNotify administrative commands.
+        default: false
